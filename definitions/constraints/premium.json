@@ -1,0 +1,24 @@
+{
+  "kind": "LimitRange",
+  "metadata": {
+    "name": "usage-limits",
+    "labels": {
+      "tier": "premium"
+    }
+  },
+  "spec": {
+    "limits": [
+      {
+        "max": {
+          "cpu": "1.5",
+          "memory": "1Gi"
+        },
+        "min": {
+          "cpu": "200m",
+          "memory": "500Mi"
+        },
+        "type": "Container"
+      }
+    ]
+  }
+}
